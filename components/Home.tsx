@@ -1,5 +1,6 @@
+"use client";
+
 import { HiArrowNarrowRight } from "react-icons/hi";
-// import { Link } from "react-scroll";
 import { Link } from "react-scroll";
 
 const Home = () => {
@@ -21,14 +22,14 @@ const Home = () => {
           Web Applications that leads to the success of the overall product.
         </p>
         <div>
-          {/* <Link to="work" smooth={true} duration={500}> */}
-          <button className="group px-9 py-[15px] mt-6 flex items-center bg-transparent border border-[#64ffda] text-[#64ffda] rounded tracking-wider">
-            Check out my work
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
-          </button>
-          {/* </Link> */}
+          <Link to="work" smooth={true} duration={500}>
+            <button className="group px-9 py-[15px] mt-6 flex items-center bg-transparent border border-[#64ffda] text-[#64ffda] rounded tracking-wider">
+              Check out my work
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-3" />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </section>
@@ -36,11 +37,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// import React from "react";
-
-// const Home = () => {
-//   return <div>Home</div>;
-// };
-
-// export default Home;

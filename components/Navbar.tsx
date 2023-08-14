@@ -73,7 +73,8 @@ const Navbar = () => {
             return (
               <li
                 key={item.id}
-                className={`w-[160px] h-[60px] flex justify-between items-center ml-[-103px] hover:ml-[-10px] duration-300 list-none px-4 cursor-pointer text-xl ${item.additionalClasses}`}>
+                style={{ backgroundColor: item.bgColor }}
+                className="w-[160px] h-[60px] flex justify-between items-center ml-[-103px] hover:ml-[-10px] duration-300 list-none px-4 cursor-pointer text-xl">
                 <a
                   onScroll={item.title === "Email" ? handleScroll : undefined}
                   href={item.href}

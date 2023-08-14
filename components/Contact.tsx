@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import * as z from "zod";
 import {
   Form,
@@ -35,7 +34,7 @@ export function Contact() {
   }
 
   return (
-    <section className="bg-[#0a192f] w-full h-screen">
+    <section className="bg-[#0a192f] w-full h-auto pt-4 pb-12" id="contact">
       <div className="max-w-[1080px] mx-auto px-5 flex justify-center items-center pt-[150px]">
         <Form {...form}>
           <form
