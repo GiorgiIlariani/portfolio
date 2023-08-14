@@ -3,7 +3,9 @@ import PersonalImage from "@/public/assets/images/me.png";
 
 const About = () => {
   return (
-    <div id="about" className="w-full h-screen bg-[#0a192f] text-gray-300">
+    <section
+      id="about"
+      className="w-full h-screen xs:h-auto bg-[#0a192f] text-gray-300">
       <div className="max-w-[1080px] mx-auto px-5 flex flex-col justify-center h-full">
         <div className="flex items-center">
           {/* <div className="text-[#64ffda] text-3xl">02.</div> */}
@@ -38,7 +40,7 @@ const About = () => {
             <Image
               src={PersonalImage}
               alt="my photo"
-              className="rounded w-[350px] object-contain z-100 relative"
+              className="rounded w-[350px] object-contain z-10 relative"
               width={350}
               height={350}
             />
@@ -46,7 +48,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

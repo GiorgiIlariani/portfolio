@@ -1,16 +1,16 @@
-import E_commerce from '@/public/assets//images/E-commerce.png'
-import Cv_Creator from '@/public/assets//images/Cv_Creator.png'
+import E_commerce from '@/public/assets/images/E-commerce.png'
+import Cv_Creator from '@/public/assets/images/Cv_Creator.png'
 import Tours from '@/public/assets//images/Tours.png'
-import Grocery_bud from '@/public/assets//images/Grocery_bud.png'
-import Weather_api from '@/public/assets//images/Weather_api.png'
-import Grocery_bud_js from '@/public/assets//images/Grocery_bud_js.png'
+import Grocery_bud from '@/public/assets/images/Grocery_bud.png'
+import Weather_api from '@/public/assets/images/Weather_api.png'
+import Grocery_bud_js from '@/public/assets/images/Grocery_bud_js.png'
 import hooBank from '@/public/assets//images/hooBank.png'
-import Covid_Questionary from '@/public/assets//images/Covid_questionary.png'
-import Password_generator from '@/public/assets//images/Password_generator.png'
+import Covid_Questionary from '@/public/assets/images/Covid_questionary.png'
+import Password_generator from '@/public/assets/images/Password_generator.png'
 import carhub from '@/public/assets//images/carhub.png'
-import youtube_clone from '@/public/assets//images/youtube_clone.png'
-import GymExercises from '@/public/assets//images/gym_exercises.png'
-import MyMarket from '@/public/assets//images/mymarket.png'
+import youtube_clone from '@/public/assets/images/youtube_clone.png'
+import GymExercises from '@/public/assets/images/gym_exercises.png'
+import MyMarket from '@/public/assets/images/mymarket.png'
 
 
 export const data = [
@@ -18,7 +18,7 @@ export const data = [
     id: 1,
     name: "myMarket",
     image: MyMarket,
-    githu2b: "https://github.com/GiorgiIlariani/mymarket",
+    github: "https://github.com/GiorgiIlariani/mymarket",
     live: "https://mymarket-iota.vercel.app/",
   },
   {

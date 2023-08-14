@@ -4,14 +4,16 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div id="home" className="w-full h-screen bg-[#0a192f] pt-0 xs:pt-20">
+    <section
+      id="home"
+      className="w-full h-screen xs:h-auto xs:py-[100px] bg-[#0a192f] pt-0 xs:pt-20">
       {/* Container */}
       <div className="max-w-[1080px] mx-auto flex flex-col justify-center h-full space-y-2 px-5">
         <p className="text-[#64ffda] text-xl py-4">Hi, my name is</p>
-        <h1 className="sm:text-[40px] text-7xl font-bold text-[#ccd6f6]">
+        <h1 className="sm:text-[40px] text-6xl font-bold text-[#ccd6f6]">
           Giorgi Ilariani.
         </h1>
-        <h2 className="sm:text-[50px] text-7xl font-bold text-[#8892b0]">
+        <h2 className="sm:text-[50px] text-6xl font-bold text-[#8892b0]">
           I'm a Frontend Web developer.
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px] mt-2 text-xl">
@@ -29,7 +31,7 @@ const Home = () => {
           {/* </Link> */}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
