@@ -48,7 +48,7 @@ export const SocialIconsConsts = [
   {
     id: 3,
     title: "Email",
-    href: "https://www.linkedin.com/in/giorgi-ilariani-69869a260/",
+    // href: "",
     icon: <HiOutlineMail size={30} />,
     bgColor: "#6fc2b0",
   },

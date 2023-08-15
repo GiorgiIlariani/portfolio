@@ -9,7 +9,6 @@ const Work = () => {
       <div className="max-w-[1080px] mx-auto px-5 pt-[200px] flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <div className="flex items-center">
-            {/* <div className="text-[#64ffda] text-3xl">04.</div> */}
             <div className="text-[#64ffda] text-4xl mr-5">work</div>
             <div className="border border-[#233554] w-[350px] sm:hidden block"></div>
           </div>
@@ -25,7 +24,6 @@ const Work = () => {
 
         {/* container for projects */}
         <div className="grid grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-4">
-          {/* Gird Item */}
           {project.map((item) => {
             return (
               <div
@@ -33,13 +31,11 @@ const Work = () => {
                 style={{ backgroundImage: `url(${item.image.src})` }}
                 className="shadow-lg shadow-[#040c16] group container rounded-md 
               flex justify-center text-center items-center mx-auto content-div">
-                {/* Hover effect for images */}
                 <div className="opacity-0 group-hover:opacity-100 ">
-                  <span className="text-2xl font bold text-white tracking-wider ">
+                  <span className="text-2xl md:text-xl font-bold text-white tracking-wider ">
                     {item.name}
                   </span>
                   <div className="pt-8 text-center ">
-                    {/* eslint-disable-next-line */}
                     <a href={item.github} target="_blank">
                       <button
                         className="text-center rounded-lg px-4 py-3 m-2
@@ -47,7 +43,6 @@ const Work = () => {
                         Code
                       </button>
                     </a>
-                    {/* eslint-disable-next-line */}
                     <a href={item.live} target="_blank">
                       <button
                         className="text-center rounded-lg px-4 py-3 m-2

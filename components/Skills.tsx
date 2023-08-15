@@ -20,7 +20,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-4 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center py-8">
+        <div className="w-full grid grid-cols-3 xs:grid-cols-1 sm:grid-cols-2 gap-8 text-center py-8">
           {skills.map(({ id, img, skill }) => (
             <div
               className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"

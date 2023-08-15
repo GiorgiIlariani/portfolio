@@ -14,6 +14,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Validation } from "@/lib/validation";
 import { Textarea } from "./ui/textarea";
+import { toast } from "react-toastify";
 
 export function Contact() {
   // 1. Define your form.
@@ -27,11 +28,7 @@ export function Contact() {
   });
   // ...
 
-  function onSubmit(values: z.infer<typeof Validation>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
-  }
+  async function onSubmit(values: z.infer<typeof Validation>) {}
 
   return (
     <section className="bg-[#0a192f] w-full h-auto pt-4 pb-12" id="contact">
@@ -40,7 +37,7 @@ export function Contact() {
           <form
             onSubmit={form.handleSubmit(onSubmit)}
             className="flex flex-col max-w-[600px] w-full gap-5">
-            <div className="pb-8">
+            <div className="pb-6">
               <div className="flex items-center">
                 <div className="text-[#64ffda] text-4xl">Contact</div>
               </div>

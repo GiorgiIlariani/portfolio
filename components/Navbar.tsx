@@ -13,13 +13,27 @@ const Navbar = () => {
     setHamburgerMenu((prev: boolean) => !prev);
   };
 
-  const handleScroll = () => {
+  const handleScrollBottom = () => {
     // scrollToBottom();
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+
+  const handleScrollTop = () => {
+    // scrollToBottom();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
-    <div className="fixed w-full h-[70px] flex justify-between items-center px-5 bg-[#0a192f] text-gray-300 z-[9999]">
-      <div className="w-[40px] text-[#64ffda] cursor-pointer">
+    <div className="fixed w-full h-[70px] flex justify-between items-center px-5 bg-[#0a192f] text-gray-300 z-20">
+      <div
+        className="w-[40px] text-[#64ffda] cursor-pointer"
+        onClick={handleScrollTop}>
         <Logo />
       </div>
       {/* desktop menu */}
@@ -40,7 +54,7 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:flex hidden z-10">
+      <div onClick={handleClick} className="md:flex hidden z-20">
         {!hamburgerMenu ? <FaBars size={30} /> : <FaTimes size={30} />}
       </div>
 
@@ -67,17 +81,19 @@ const Navbar = () => {
       </ul>
 
       {/* Social icons */}
-      <div className="xl:hidden flex fixed flex-col top-[35%] left-0 z-[9999]">
+      <div className="xl:hidden flex fixed flex-col top-[35%] left-0 z-50">
         <ul>
           {SocialIconsConsts.map((item) => {
             return (
               <li
                 key={item.id}
                 style={{ backgroundColor: item.bgColor }}
-                className="w-[160px] h-[60px] flex justify-between items-center ml-[-103px] hover:ml-[-10px] duration-300 list-none px-4 cursor-pointer text-xl">
+                className="w-[160px] h-[60px] flex justify-between items-center ml-[-103px] hover:ml-[-10px] duration-300 list-none px-4 cursor-pointer text-xl"
+                onClick={
+                  item.title === "Email" ? handleScrollBottom : undefined
+                }>
                 <a
-                  onScroll={item.title === "Email" ? handleScroll : undefined}
-                  href={item.href}
+                  href={item?.href !== "" ? item?.href : "#"}
                   className="flex justify-between items-center w-full text-gray-300"
                   target="_blank">
                   {item.title} {item.icon}
