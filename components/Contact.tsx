@@ -15,20 +15,54 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Validation } from "@/lib/validation";
 import { Textarea } from "./ui/textarea";
 import { toast } from "react-toastify";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export function Contact() {
+  const [isLoading, setIsLoading] = useState(false); // Step 1
+
+  const formRef = useRef<HTMLFormElement | null>(null);
+
   // 1. Define your form.
   const form = useForm<z.infer<typeof Validation>>({
     resolver: zodResolver(Validation),
     defaultValues: {
-      name: "",
-      email: "",
+      from_name: "",
+      from_email: "",
       message: "",
     },
   });
+
   // ...
 
-  async function onSubmit(values: z.infer<typeof Validation>) {}
+  async function onSubmit(values: z.infer<typeof Validation>) {
+    setIsLoading(true);
+    emailjs
+      .sendForm(
+        "service_rcmdd6p",
+        "template_mvb2y9z",
+        formRef.current as HTMLFormElement,
+        "0SgCaBCvt7zduv4Hu"
+      )
+      .then(
+        () => {
+          toast.success("Message sent succesfully", {
+            position: "top-center",
+            autoClose: 3000,
+          });
+          form.reset();
+        },
+        () => {
+          toast.error("Something went wrong", {
+            position: "top-center",
+            autoClose: 3000,
+          });
+        }
+      )
+      .finally(() => {
+        setIsLoading(false);
+      });
+  }
 
   return (
     <section className="bg-[#0a192f] w-full h-auto pt-4 pb-12" id="contact">
@@ -36,7 +70,8 @@ export function Contact() {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="flex flex-col max-w-[600px] w-full gap-5">
+            className="flex flex-col max-w-[600px] w-full gap-5"
+            ref={formRef}>
             <div className="pb-6">
               <div className="flex items-center">
                 <div className="text-[#64ffda] text-4xl">Contact</div>
@@ -47,7 +82,7 @@ export function Contact() {
             </div>
             <FormField
               control={form.control}
-              name="name"
+              name="from_name"
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
@@ -63,7 +98,7 @@ export function Contact() {
             />
             <FormField
               control={form.control}
-              name="email"
+              name="from_email"
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
@@ -96,7 +131,8 @@ export function Contact() {
             />
             <Button
               type="submit"
-              className=" border-2 bg-transparent border-[#64ffda] text-[#64ffda] rounded tracking-wider px-4 py-3 my-8 mx-auto flex items-center">
+              className=" border-2 bg-transparent border-[#64ffda] text-[#64ffda] rounded tracking-wider px-4 py-3 my-8 mx-auto flex items-center"
+              disabled={isLoading}>
               Let's Collaborate
             </Button>
           </form>
