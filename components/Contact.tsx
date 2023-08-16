@@ -46,14 +46,14 @@ export function Contact() {
       )
       .then(
         () => {
-          toast.success("Message sent succesfully", {
+          toast.success("Message sent succesfully!", {
             position: "top-center",
             autoClose: 3000,
           });
           form.reset();
         },
         () => {
-          toast.error("Something went wrong", {
+          toast.error("Something went wrong!", {
             position: "top-center",
             autoClose: 3000,
           });
