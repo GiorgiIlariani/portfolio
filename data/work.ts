@@ -1,26 +1,25 @@
-import E_commerce from '@/public/assets/images/E-commerce.png'
-import Cv_Creator from '@/public/assets/images/Cv_Creator.png'
-import Tours from '@/public/assets//images/Tours.png'
-import Grocery_bud from '@/public/assets/images/Grocery_bud.png'
-import Weather_api from '@/public/assets/images/Weather_api.png'
-import Grocery_bud_js from '@/public/assets/images/Grocery_bud_js.png'
-import hooBank from '@/public/assets//images/hooBank.png'
-import Covid_Questionary from '@/public/assets/images/Covid_questionary.png'
-import Password_generator from '@/public/assets/images/Password_generator.png'
-import carhub from '@/public/assets//images/carhub.png'
-import youtube_clone from '@/public/assets/images/youtube_clone.png'
-import GymExercises from '@/public/assets/images/gym_exercises.png'
-import MyMarket from '@/public/assets/images/mymarket.png'
-
+import E_commerce from "@/public/assets/images/E-commerce.png";
+import Cv_Creator from "@/public/assets/images/Cv_Creator.png";
+import Tours from "@/public/assets//images/Tours.png";
+import Grocery_bud from "@/public/assets/images/Grocery_bud.png";
+import Weather_api from "@/public/assets/images/Weather_api.png";
+import Grocery_bud_js from "@/public/assets/images/Grocery_bud_js.png";
+import hooBank from "@/public/assets//images/hooBank.png";
+import Covid_Questionary from "@/public/assets/images/Covid_questionary.png";
+import Password_generator from "@/public/assets/images/Password_generator.png";
+import carhub from "@/public/assets//images/carhub.png";
+import youtube_clone from "@/public/assets/images/youtube_clone.png";
+import GymExercises from "@/public/assets/images/gym_exercises.png";
+import MyMarket from "@/public/assets/images/mymarket.png";
 
 export const data = [
-  {
-    id: 1,
-    name: "myMarket",
-    image: MyMarket,
-    github: "https://github.com/GiorgiIlariani/mymarket",
-    live: "https://mymarket-iota.vercel.app/",
-  },
+  // {
+  //   id: 1,
+  //   name: "myMarket",
+  //   image: MyMarket,
+  //   github: "https://github.com/GiorgiIlariani/mymarket",
+  //   live: "https://mymarket-iota.vercel.app/",
+  // },
   {
     id: 2,
     name: "gym_exercises",
@@ -52,7 +51,7 @@ export const data = [
   {
     id: 6,
     name: "Covid_Questionary",
-    image: Covid_Questionary ,
+    image: Covid_Questionary,
     github: "https://github.com/GiorgiIlariani/Covid_Questionary",
     live: "https://covid-questionary.vercel.app/",
   },
@@ -63,7 +62,7 @@ export const data = [
     github: "https://github.com/GiorgiIlariani/E-commerce",
     live: "https://e-commerce-pi-eight.vercel.app/",
   },
-    {
+  {
     id: 8,
     name: "hooBank",
     image: hooBank,
@@ -106,4 +105,3 @@ export const data = [
     live: "https://password-generator-kappa-ten.vercel.app/",
   },
 ];
-
