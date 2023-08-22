@@ -13,13 +13,13 @@ import GymExercises from "@/public/assets/images/gym_exercises.png";
 import MyMarket from "@/public/assets/images/mymarket.png";
 
 export const data = [
-  // {
-  //   id: 1,
-  //   name: "myMarket",
-  //   image: MyMarket,
-  //   github: "https://github.com/GiorgiIlariani/mymarket",
-  //   live: "https://mymarket-iota.vercel.app/",
-  // },
+  {
+    id: 1,
+    name: "myMarket",
+    image: MyMarket,
+    github: "https://github.com/GiorgiIlariani/mymarket",
+    live: "https://mymarket-iota.vercel.app/",
+  },
   {
     id: 2,
     name: "gym_exercises",
