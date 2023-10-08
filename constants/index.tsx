@@ -48,14 +48,13 @@ export const SocialIconsConsts = [
   {
     id: 3,
     title: "Email",
-    // href: "",
     icon: <HiOutlineMail size={30} />,
     bgColor: "#6fc2b0",
   },
   {
     id: 4,
     title: "Resume",
-    href: "https://drive.google.com/file/d/1QR2Kk5En1eLv0LUy6bldNCGH_xXGRRGI/view?usp=drive_link",
+    href: "https://drive.google.com/file/d/1FSbu0c0rDhrUd0FZYlaRm8IFjcUT1Ocz/view",
     icon: <BsFillPersonLinesFill size={30} />,
     bgColor: "#565f69",
   },
