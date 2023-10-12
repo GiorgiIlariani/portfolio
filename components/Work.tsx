@@ -14,11 +14,9 @@ const Work = () => {
           </div>
           <p className="py-6 text-xl">// Check out some of my recent work</p>
           <p className="text-xl max-w-[700px]">
-            I decided to show Javascript projects(without changing code), so you
-            will notice my progress in just one year. from below to top, you
-            will see how I got better on every project. Here you will find
-            projects which is fully responsive, however, there are projects
-            which is not responsive yet.
+            from below to top, you will see how I got better on every project.
+            Here you will find projects which is not responsive yet, but i am
+            working on that.
           </p>
         </div>
 
@@ -32,7 +30,7 @@ const Work = () => {
                 className="shadow-lg shadow-[#040c16] group container rounded-md 
               flex justify-center text-center items-center mx-auto content-div">
                 <div className="opacity-0 group-hover:opacity-100 ">
-                  <span className="text-2xl md:text-xl font-bold text-white tracking-wider ">
+                  <span className="text-2xl md:text-xl font-bold text-white tracking-wider">
                     {item.name}
                   </span>
                   <div className="pt-8 text-center ">
