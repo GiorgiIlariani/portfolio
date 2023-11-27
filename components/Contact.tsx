@@ -18,8 +18,6 @@ import { toast } from "react-toastify";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-//
-
 export function Contact() {
   const [isLoading, setIsLoading] = useState(false); // Step 1
 
