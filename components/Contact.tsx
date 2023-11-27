@@ -41,10 +41,10 @@ export function Contact() {
     setIsLoading(true);
     emailjs
       .sendForm(
-        "service_28t3yzl",
-        "template_mvb2y9z",
+        "service_ydo16fc",
+        "template_p1swnr6",
         formRef.current as HTMLFormElement,
-        "0SgCaBCvt7zduv4Hu"
+        "qBO3LD8BynnNJI19X"
       )
       .then(
         () => {
