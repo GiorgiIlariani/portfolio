@@ -39,7 +39,7 @@ export function Contact() {
     setIsLoading(true);
     emailjs
       .sendForm(
-        "service_rcmdd6p",
+        "service_28t3yzl",
         "template_mvb2y9z",
         formRef.current as HTMLFormElement,
         "0SgCaBCvt7zduv4Hu"
