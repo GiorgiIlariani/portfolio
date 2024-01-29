@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "./Logo";
 import { NavbarConsts, SocialIconsConsts } from "@/constants";
 import { Link } from "react-scroll";
@@ -9,8 +9,21 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [hamburgerMenu, setHamburgerMenu] = useState<boolean>(false);
 
+  useEffect(() => {
+    const body = document.body;
+
+    // Remove the 'overflow-hidden' class when the component is unmounted
+    return () => {
+      body.classList.remove("overflow-hidden");
+    };
+  }, []); // Run this effect only once when the component mounts
+
   const handleClick = () => {
-    setHamburgerMenu((prev: boolean) => !prev);
+    setHamburgerMenu((prev) => !prev);
+
+    // Toggle the 'overflow-hidden' class on the body element
+    const body = document.body;
+    body.classList.toggle("overflow-hidden");
   };
 
   const handleScrollBottom = () => {
@@ -19,6 +32,7 @@ const Navbar = () => {
       top: document.body.scrollHeight,
       behavior: "smooth",
     });
+    setHamburgerMenu(false);
   };
 
   const handleScrollTop = () => {
