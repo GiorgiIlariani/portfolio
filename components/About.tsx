@@ -16,24 +16,28 @@ const About = () => {
         <div className="flex xl:flex-col justify-between items-center flex-row">
           <div className="max-w-[550px] mt-4">
             <p className="text-[#8892b0] text-[20px] mt-4">
-              Hello! My name is Giorgi and I enjoy creating things as a Web
-              Developer. My interest in web development started one year ago,
-              this one year gave me quite a lot of experience.
+              Hello! I'm Giorgi, and I love making things as a Web Developer. I
+              started getting into web development two years ago, and it's been
+              a great learning journey. It all began with Bitcamp, a group for
+              web developers. I started learning the basics of HTML, CSS, and
+              JavaScript. Gradually, I found out how much I enjoyed creating
+              websites and became a frontend developer.
             </p>
             <p className="text-[#8892b0] text-[20px] mt-4">
-              It all started with Bitcamp(a group that brings together web
-              developers). I started learning Html, Css and Javascript concepts
-              for the first time. After that, I gradually realized how much I
-              liked creating web sites and started developing as a frontend
-              developer.
+              The first three to four months were tough, but I kept thinking
+              about the success I could achieve in this field. After five
+              months, I started learning React and loved working with it. A year
+              later, I discovered Next.js, a popular React library with some
+              cool features. I also found out that writing code with TypeScript
+              is a smart move because it keeps things safe. I learned some
+              styling libraries like Tailwind, MUI, and Shadcn, which helped me
+              save time when building applications.
             </p>
             <p className="text-[#8892b0] text-[20px] mt-4">
-              First three-four months were really difficult, but time by time, I
-              thought about success I could achieve in this field. After 5
-              months, I started learning React and realized how much I loved
-              working with it. At this moment I am focused on learning new
-              things, for me learning new things means one step towards success.
+              Right now, my main focus is on learning new things. For me,
+              learning new stuff is like taking a step towards success.
             </p>
+            <p className="text-[#8892b0] text-[20px] mt-4"></p>
           </div>
           <div className="relative my-8 xs:hidden block">
             <div className="rounded w-[350px] h-[350px] border-[3px] border-[#64ffda] absolute left-6 top-6 cursor-pointer" />

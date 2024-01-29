@@ -1,8 +1,19 @@
+"use client";
+
 import { data } from "@/data/work";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Work = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   // projects file
   const project = data;
+
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
 
   return (
     <section id="work" className="w-full h-auto text-gray-300 bg-[#0a192f]">
@@ -21,14 +32,20 @@ const Work = () => {
         </div>
 
         {/* container for projects */}
-        <div className="grid grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-4">
-          {project.map((item) => {
+        <ul
+          className="grid grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-4"
+          ref={ref}>
+          {project.map((item, index) => {
             return (
-              <div
+              <motion.li
                 key={item.id}
+                variants={cardVariants}
+                initial="initial"
+                animate={isInView ? "animate" : "initial"}
+                transition={{ duration: 0.3, delay: index * 0.2 }}
                 style={{ backgroundImage: `url(${item.image.src})` }}
                 className="shadow-lg shadow-[#040c16] group container rounded-md 
-              flex justify-center text-center items-center mx-auto content-div">
+                flex justify-center text-center items-center mx-auto content-div">
                 <div className="opacity-0 group-hover:opacity-100 ">
                   <span className="text-2xl md:text-xl font-bold text-white tracking-wider">
                     {item.name}
@@ -50,10 +67,10 @@ const Work = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </motion.li>
             );
           })}
-        </div>
+        </ul>
       </div>
     </section>
   );

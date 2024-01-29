@@ -2,6 +2,8 @@
 
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -9,17 +11,30 @@ const Home = () => {
       id="home"
       className="w-full h-screen xs:h-auto xs:py-[100px] bg-[#0a192f] pt-0 xs:pt-20">
       {/* Container */}
-      <div className="max-w-[1080px] mx-auto flex flex-col justify-center h-full space-y-2 px-5">
-        <p className="text-[#64ffda] text-xl py-4">Hi, my name is</p>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="max-w-[1080px] mx-auto flex flex-col justify-center h-full space-y-2 px-5">
+        <p className="text-[#64ffda] text-5xl py-4">Hi, I am</p>
         <h1 className="sm:text-[40px] text-6xl font-bold text-[#ccd6f6]">
-          Giorgi Ilariani.
+          <TypeAnimation
+            sequence={["Giorgi Ilariani", 1000, "Frontend web developer", 1000]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+          />
         </h1>
-        <h2 className="sm:text-[50px] text-6xl font-bold text-[#8892b0]">
-          I'm a Frontend Web developer.
-        </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px] mt-2 text-xl">
-          A Frontend focused Web Developer building the Frontend of Websites and
-          Web Applications that leads to the success of the overall product.
+          <TypeAnimation
+            sequence={[
+              "A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product.",
+              1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            repeat={Infinity}
+          />
         </p>
         <div>
           <Link to="work" smooth={true} duration={500}>
@@ -31,7 +46,7 @@ const Home = () => {
             </button>
           </Link>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

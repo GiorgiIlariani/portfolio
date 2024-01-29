@@ -63,7 +63,7 @@ const Navbar = () => {
         className={
           !hamburgerMenu
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex-col justify-start pt-20 items-center hidden md:flex"
         }>
         {NavbarConsts.map((item) => (
           <li
@@ -78,6 +78,26 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
+        <div className="flex gap-4 mt-[260px]">
+          {SocialIconsConsts.map((item) => {
+            return (
+              <li
+                key={item.id}
+                style={{ backgroundColor: item.bgColor }}
+                className="w-[60px] h-[60px] flex justify-between items-center list-none px-4 cursor-pointer text-xl"
+                onClick={
+                  item.title === "Email" ? handleScrollBottom : undefined
+                }>
+                <a
+                  href={item?.href !== "" ? item?.href : "#"}
+                  className="flex justify-between items-center w-full text-gray-300"
+                  target="_blank">
+                  {item.icon}
+                </a>
+              </li>
+            );
+          })}
+        </div>
       </ul>
 
       {/* Social icons */}
