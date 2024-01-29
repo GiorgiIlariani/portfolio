@@ -33,6 +33,8 @@ const Navbar = () => {
       behavior: "smooth",
     });
     setHamburgerMenu(false);
+    const body = document.body;
+    body.classList.remove("overflow-hidden");
   };
 
   const handleScrollTop = () => {
