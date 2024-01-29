@@ -78,7 +78,7 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
-        <div className="flex gap-4 mt-[260px]">
+        <div className="flex gap-4 relative top-10">
           {SocialIconsConsts.map((item) => {
             return (
               <li

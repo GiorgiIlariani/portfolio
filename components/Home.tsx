@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="w-full h-screen xs:h-auto xs:py-[100px] bg-[#0a192f] pt-0 xs:pt-20">
+      className="w-full h-screen xs:py-[100px] bg-[#0a192f] pt-0 xs:pt-20">
       {/* Container */}
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
