@@ -1,8 +1,21 @@
+"use client";
+
 import Image from "next/image";
 import { data } from "../data/skills";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Skills = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   const skills = data;
+
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
   return (
     <section
       id="skills"
@@ -20,22 +33,28 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-3 xs:grid-cols-1 sm:grid-cols-2 gap-8 text-center py-8">
-          {skills.map(({ id, img, skill }) => (
-            <div
-              className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
-              key={id}>
+        <ul
+          className="w-full grid grid-cols-3 xs:grid-cols-1 sm:grid-cols-2 gap-8 text-center py-8"
+          ref={ref}>
+          {skills.map((item, index) => (
+            <motion.li
+              key={item.id}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+              className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
               <Image
                 className="mx-auto my-4"
-                src={img}
+                src={item.img}
                 alt="html"
                 width={80}
                 height={80}
               />
-              <p className="mb-4">{skill}</p>
-            </div>
+              <p className="mb-4">{item.skill}</p>
+            </motion.li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

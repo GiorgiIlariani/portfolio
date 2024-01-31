@@ -1,14 +1,25 @@
+"use client";
+
 import Image from "next/image";
 import PersonalImage from "@/public/assets/images/me.png";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const About = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const cardVariants = {
+    initial: { x: 100, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+  };
+
   return (
     <section
       id="about"
       className="w-full h-screen xs:h-auto bg-[#0a192f] text-gray-300">
       <div className="max-w-[1080px] mx-auto px-5 flex flex-col justify-center h-full">
         <div className="flex items-center">
-          {/* <div className="text-[#64ffda] text-3xl">02.</div> */}
           <div className="text-[#64ffda] text-4xl mr-5">About me</div>
           <div className="border border-[#233554] w-[350px] sm:hidden block"></div>
         </div>
@@ -39,7 +50,13 @@ const About = () => {
             </p>
             <p className="text-[#8892b0] text-[20px] mt-4"></p>
           </div>
-          <div className="relative my-8 xs:hidden block">
+          <motion.div
+            variants={cardVariants}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="relative my-8 xs:hidden block"
+            ref={ref}>
             <div className="rounded w-[350px] h-[350px] border-[3px] border-[#64ffda] absolute left-6 top-6 cursor-pointer" />
             <Image
               src={PersonalImage}
@@ -49,7 +66,7 @@ const About = () => {
               height={350}
             />
             <div className="absolute bg-[#64ffda] w-full h-full z-10 top-0 opacity-50 hover:opacity-0 duration-200" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
