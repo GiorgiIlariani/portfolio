@@ -43,15 +43,17 @@ const Skills = () => {
               initial="initial"
               animate={isInView ? "animate" : "initial"}
               transition={{ duration: 0.3, delay: index * 0.1 }}
-              className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-              <Image
-                className="mx-auto my-4"
-                src={item.img}
-                alt="html"
-                width={80}
-                height={80}
-              />
-              <p className="mb-4">{item.skill}</p>
+              className="h-[160px]">
+              <div className="h-full shadow-md shadow-[#040c16] hover:scale-110 duration-500 py-1">
+                <Image
+                  className="mx-auto my-4"
+                  src={item.img}
+                  alt="html"
+                  width={80}
+                  height={80}
+                />
+                <p className="mb-4">{item.skill}</p>
+              </div>
             </motion.li>
           ))}
         </ul>
