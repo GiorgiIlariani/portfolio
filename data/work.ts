@@ -6,6 +6,7 @@ import ThreadsApp from '@/public/assets/images/threads.png'
 import Aragveli from '@/public/assets/images/aragveli.png';
 import Blogs from '@/public/assets/images/blogs.png';
 import Pricewise from '@/public/assets/images/pricewise.png';
+import Evently from '@/public/assets/images/evently.png'
 
 
 export const data = [
@@ -16,50 +17,57 @@ export const data = [
     github: "https://github.com/GiorgiIlariani/300_aragvelii",
     live: "https://300-aragvelii.vercel.app/",
   },
-  {
+    {
     id: 2,
+    name: "Evently",
+    image: Evently,
+    github: "https://github.com/GiorgiIlariani/evently",
+    live: "https://evently-eight-pi.vercel.app/",
+  },
+  {
+    id: 3,
     name: "Blogs App",
     image: Blogs,
     github: "https://github.com/GiorgiIlariani/blogs",
     live: "https://blogs-five-sigma.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Pricewise",
     image: Pricewise,
     github: "https://github.com/GiorgiIlariani/pricewise",
     live: "https://pricewise-alpha-eight.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     name: "Threads App",
     image: ThreadsApp,
     github: "https://github.com/GiorgiIlariani/threads",
     live: "https://threads-kappa-three.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     name: "gym_exercises",
     image: GymExercises,
     github: "https://github.com/GiorgiIlariani/gym_exercises",
     live: "https://gym-exercises-self.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     name: "carhub",
     image: Carhub,
     github: "https://github.com/GiorgiIlariani/carhub",
     live: "https://carhub-alpha.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     name: "youtube_clone",
     image: Youtube_clone,
     github: "https://github.com/GiorgiIlariani/Youtube_clone",
     live: "https://youtube-clone-psi-sandy.vercel.app/",
   },
   {
-    id: 8,
+    id: 9,
     name: "Covid_Questionary",
     image: Covid_Questionary,
     github: "https://github.com/GiorgiIlariani/Covid_Questionary",
