@@ -11,9 +11,13 @@ import NavItems from "./NavItems";
 const Navbar = () => {
   return (
     <div className="fixed w-full h-[70px] flex justify-between items-center px-5 bg-[#0a192f] text-gray-300 z-20">
-      <div className="w-[40px] text-[#64ffda] cursor-pointer">
+      <Link
+        to="home"
+        smooth={true}
+        duration={500}
+        className="w-[40px] text-[#64ffda] cursor-pointer">
         <Logo />
-      </div>
+      </Link>
       {/* desktop menu */}
       <ul className="flex md:hidden">
         <NavItems />
@@ -38,13 +42,19 @@ const Navbar = () => {
                   <li
                     key={item.id}
                     style={{ backgroundColor: item.bgColor }}
-                    className="w-[50px] h-[50px] flex justify-between items-center list-none px-4 cursor-pointer text-xl">
-                    <a
-                      href={item?.href !== "" ? item?.href : "#"}
-                      className="flex justify-between items-center w-full text-gray-300"
-                      target="_blank">
-                      {item.icon}
-                    </a>
+                    className="w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] flex justify-between items-center list-none px-4 cursor-pointer text-xl">
+                    {item.title === "Email" ? (
+                      <Link to="contact" smooth={true} duration={500}>
+                        {item.icon}
+                      </Link>
+                    ) : (
+                      <a
+                        href={item?.href !== "" ? item?.href : "#"}
+                        className="flex justify-between items-center w-full text-gray-300"
+                        target="_blank">
+                        {item.icon}
+                      </a>
+                    )}
                   </li>
                 );
               })}
