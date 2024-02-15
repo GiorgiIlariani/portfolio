@@ -44,7 +44,11 @@ const Navbar = () => {
                     style={{ backgroundColor: item.bgColor }}
                     className="w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] flex justify-between items-center list-none px-4 cursor-pointer text-xl">
                     {item.title === "Email" ? (
-                      <Link to="contact" smooth={true} duration={500}>
+                      <Link
+                        to="contact"
+                        smooth={true}
+                        duration={500}
+                        className="flex justify-between items-center w-full text-gray-300">
                         {item.icon}
                       </Link>
                     ) : (
