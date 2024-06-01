@@ -28,27 +28,35 @@ const About = () => {
           <div className="max-w-[550px] mt-4">
             <p className="text-[#8892b0] text-[20px] mt-4">
               Hello! I'm Giorgi, and I love making things as a Web Developer. I
-              started getting into web development two years ago, and it's been
-              a great learning journey. It all began with Bitcamp, a group for
-              web developers. I started learning the basics of HTML, CSS, and
-              JavaScript. Gradually, I found out how much I enjoyed creating
-              websites and became a frontend developer.
+              started getting into web development almost three years ago, and
+              it's been a great learning journey. It all began with Bitcamp, a
+              group for web developers. I started learning the basics of HTML,
+              CSS, and JavaScript. Gradually, I found out how much I enjoyed
+              creating websites and became a frontend developer.
             </p>
             <p className="text-[#8892b0] text-[20px] mt-4">
-              The first three to four months were tough, but I kept thinking
-              about the success I could achieve in this field. After five
-              months, I started learning React and loved working with it. A year
-              later, I discovered Next.js, a popular React library with some
-              cool features. I also found out that writing code with TypeScript
-              is a smart move because it keeps things safe. I learned some
-              styling libraries like Tailwind, MUI, and Shadcn, which helped me
-              save time when building applications.
+              The first few months were tough, but I kept thinking about the
+              success I could achieve in this field. After five months, I
+              started learning React and loved working with it. A year later, I
+              discovered Next.js, a popular React framework with some cool
+              features. I also found out that writing code with TypeScript is a
+              smart move because it keeps things safe. I learned some styling
+              libraries like Tailwind, MUI, and Shadcn, which helped me save
+              time when building applications.
+            </p>
+            <p className="text-[#8892b0] text-[20px] mt-4">
+              One of the highlights of my career has been working as a Next.js
+              developer on a full-stack project, where I built a full stack
+              e-commerce website. This project helped me gain valuable skills
+              and confidence in creating robust and dynamic web applications.
             </p>
             <p className="text-[#8892b0] text-[20px] mt-4">
               Right now, my main focus is on learning new things. For me,
-              learning new stuff is like taking a step towards success.
+              learning new stuff is like taking a step towards success. With
+              almost three years in frontend development, I am a very strong
+              Next.js developer with a solid background in creating beautiful
+              and functional websites.
             </p>
-            <p className="text-[#8892b0] text-[20px] mt-4"></p>
           </div>
           <motion.div
             variants={cardVariants}
@@ -74,3 +82,11 @@ const About = () => {
 };
 
 export default About;
+
+//
+
+//
+
+//
+
+//

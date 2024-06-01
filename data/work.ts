@@ -1,11 +1,7 @@
 import Covid_Questionary from "@/public/assets/images/Covid_questionary.png";
-import Carhub from "@/public/assets//images/carhub.png";
-import Youtube_clone from "@/public/assets/images/youtube_clone.png";
-import GymExercises from "@/public/assets/images/gym_exercises.png";
 import ThreadsApp from '@/public/assets/images/threads.png'
 import Aragveli from '@/public/assets/images/aragveli.png';
 import Blogs from '@/public/assets/images/blogs.png';
-import Pricewise from '@/public/assets/images/pricewise.png';
 import Evently from '@/public/assets/images/evently.png'
 import MyMarket from '@/public/assets/images/mymarket.png'
 
