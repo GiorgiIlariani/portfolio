@@ -48,6 +48,7 @@ export const SocialIconsConsts = [
   {
     id: 3,
     title: "Email",
+    href: "mailto:codemasterig@gmail.com",
     icon: <HiOutlineMail size={30} />,
     bgColor: "#6fc2b0",
   },

@@ -43,7 +43,7 @@ const Navbar = () => {
                     key={item.id}
                     style={{ backgroundColor: item.bgColor }}
                     className="w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] flex justify-between items-center list-none px-4 cursor-pointer text-xl">
-                    {item.title === "Email" ? (
+                    {/* {item.title === "Email" ? (
                       <Link
                         to="contact"
                         smooth={true}
@@ -51,14 +51,14 @@ const Navbar = () => {
                         className="flex justify-between items-center w-full text-gray-300">
                         {item.icon}
                       </Link>
-                    ) : (
-                      <a
-                        href={item?.href !== "" ? item?.href : "#"}
-                        className="flex justify-between items-center w-full text-gray-300"
-                        target="_blank">
-                        {item.icon}
-                      </a>
-                    )}
+                    ) : ( */}
+                    <a
+                      href={item?.href !== "" ? item?.href : "#"}
+                      className="flex justify-between items-center w-full text-gray-300"
+                      target="_blank">
+                      {item.icon}
+                    </a>
+                    {/* )} */}
                   </li>
                 );
               })}
