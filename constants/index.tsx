@@ -45,7 +45,6 @@ export const SocialIconsConsts = [
     icon: <FaGithub size={30} />,
     bgColor: "#333333",
   },
-
   {
     id: 3,
     title: "Resume",

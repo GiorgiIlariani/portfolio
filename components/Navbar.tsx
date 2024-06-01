@@ -37,7 +37,7 @@ const Navbar = () => {
               <NavItems />
             </ul>
             <Separator className="border bg-[#0f1724]" />
-            <div className="flex gap-4 relative top-10 w-full items-center justify-center">
+            <ul className="flex gap-4 relative top-10 w-full items-center justify-center">
               <li
                 style={{ backgroundColor: "#6fc2b0" }}
                 className="w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] flex justify-between items-center list-none px-4 cursor-pointer text-xl">
@@ -64,31 +64,40 @@ const Navbar = () => {
                   </li>
                 );
               })}
-            </div>
+            </ul>
           </SheetContent>
         </Sheet>
       </nav>
 
       {/* Social icons */}
-      <div className="xl:hidden flex fixed flex-col top-[35%] left-0 z-50">
-        <ul>
-          {SocialIconsConsts.map((item) => {
-            return (
-              <li
-                key={item.id}
-                style={{ backgroundColor: item.bgColor }}
-                className="w-[160px] h-[60px] flex justify-between items-center ml-[-103px] hover:ml-[-10px] duration-300 list-none px-4 cursor-pointer text-xl">
-                <a
-                  href={item?.href !== "" ? item?.href : "#"}
-                  className="flex justify-between items-center w-full text-gray-300"
-                  target="_blank">
-                  {item.title} {item.icon}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      <ul className="xl:hidden flex fixed flex-col top-[35%] left-0 z-50">
+        <li
+          style={{ backgroundColor: "#6fc2b0" }}
+          className="w-[160px] h-[60px] flex justify-between items-center ml-[-103px] hover:ml-[-10px] duration-300 list-none px-4 cursor-pointer text-xl">
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="flex justify-between items-center w-full text-gray-300">
+            Email <HiOutlineMail size={30} />
+          </Link>
+        </li>
+        {SocialIconsConsts.map((item) => {
+          return (
+            <li
+              key={item.id}
+              style={{ backgroundColor: item.bgColor }}
+              className="w-[160px] h-[60px] flex justify-between items-center ml-[-103px] hover:ml-[-10px] duration-300 list-none px-4 cursor-pointer text-xl">
+              <a
+                href={item?.href !== "" ? item?.href : "#"}
+                className="flex justify-between items-center w-full text-gray-300"
+                target="_blank">
+                {item.title} {item.icon}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };
