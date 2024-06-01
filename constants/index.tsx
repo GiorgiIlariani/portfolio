@@ -45,15 +45,9 @@ export const SocialIconsConsts = [
     icon: <FaGithub size={30} />,
     bgColor: "#333333",
   },
+
   {
     id: 3,
-    title: "Email",
-    href: "mailto:codemasterig@gmail.com",
-    icon: <HiOutlineMail size={30} />,
-    bgColor: "#6fc2b0",
-  },
-  {
-    id: 4,
     title: "Resume",
     href: "https://drive.google.com/file/d/1xco606ZYAf-lqvJsC4OdIsEIKiqXd602/view?usp=sharing",
     icon: <BsFillPersonLinesFill size={30} />,

@@ -7,6 +7,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Separator } from "./ui/separator";
 import { GiHamburgerMenu } from "react-icons/gi";
 import NavItems from "./NavItems";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Navbar = () => {
   return (
@@ -37,28 +38,29 @@ const Navbar = () => {
             </ul>
             <Separator className="border bg-[#0f1724]" />
             <div className="flex gap-4 relative top-10 w-full items-center justify-center">
+              <li
+                style={{ backgroundColor: "#6fc2b0" }}
+                className="w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] flex justify-between items-center list-none px-4 cursor-pointer text-xl">
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  className="flex justify-between items-center w-full text-gray-300">
+                  <HiOutlineMail size={30} />
+                </Link>
+              </li>
               {SocialIconsConsts.map((item) => {
                 return (
                   <li
                     key={item.id}
                     style={{ backgroundColor: item.bgColor }}
                     className="w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] flex justify-between items-center list-none px-4 cursor-pointer text-xl">
-                    {/* {item.title === "Email" ? (
-                      <Link
-                        to="contact"
-                        smooth={true}
-                        duration={500}
-                        className="flex justify-between items-center w-full text-gray-300">
-                        {item.icon}
-                      </Link>
-                    ) : ( */}
                     <a
                       href={item?.href !== "" ? item?.href : "#"}
                       className="flex justify-between items-center w-full text-gray-300"
                       target="_blank">
                       {item.icon}
                     </a>
-                    {/* )} */}
                   </li>
                 );
               })}
