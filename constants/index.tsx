@@ -48,7 +48,7 @@ export const SocialIconsConsts = [
   {
     id: 3,
     title: "Resume",
-    href: "https://drive.google.com/file/d/1xco606ZYAf-lqvJsC4OdIsEIKiqXd602/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1M2EPKsGnpf2fsp96Np6RFBZsVH678LuP/view?usp=sharing",
     icon: <BsFillPersonLinesFill size={30} />,
     bgColor: "#565f69",
   },
