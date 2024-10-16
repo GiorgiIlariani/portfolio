@@ -5,9 +5,17 @@ import Blogs from '@/public/assets/images/blogs.png';
 import Evently from '@/public/assets/images/evently.png';
 import MyMarket from '@/public/assets/images/mymarket.png';
 import RealEstateManager from '@/public/assets/images/real-estate-manager.png';
+import Hatch from '@/public/assets/images/hatch.png';
 
 
 export const data = [
+  {
+    id:8,
+    name: 'Hatch',
+    image: Hatch,
+    github: 'https://github.com/GiorgiIlariani/hatch',
+    live: 'https://hatch-three.vercel.app/',
+  },
   {
     id: 1,
     name: "Real Estate Manager",
