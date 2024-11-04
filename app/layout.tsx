@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   description: "my personal portfolio",
 };
 
+// root layout
+
 export default function RootLayout({
   children,
 }: {
