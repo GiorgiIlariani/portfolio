@@ -71,7 +71,8 @@ export function Contact() {
           <form
             onSubmit={form.handleSubmit(onSubmit)}
             className="flex flex-col max-w-[600px] w-full gap-5"
-            ref={formRef}>
+            ref={formRef}
+          >
             <div className="pb-6">
               <div className="flex items-center">
                 <div className="text-[#64ffda] text-4xl">Contact</div>
@@ -132,7 +133,8 @@ export function Contact() {
             <Button
               type="submit"
               className=" border-2 bg-transparent border-[#64ffda] text-[#64ffda] rounded tracking-wider px-4 py-3 my-8 mx-auto flex items-center"
-              disabled={isLoading}>
+              disabled={isLoading}
+            >
               Let's Collaborate
             </Button>
           </form>

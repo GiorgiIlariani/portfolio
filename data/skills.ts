@@ -10,6 +10,7 @@ import NextJs from "@/public/assets/images/nextjs.png";
 import Shadcn from "@/public/assets/images/shadcn.png";
 import MongoDb from "@/public/assets/images/mongodb.png";
 import Clerk from "@/public/assets/images/clerk.jpg";
+import Sanity from "@/public/assets/images/sanity-logo.png";
 
 export const data = [
   {
@@ -59,17 +60,22 @@ export const data = [
   },
   {
     id: 10,
+    img: Clerk,
+    skill: "CLERK AUTH",
+  },
+  {
+    id: 11,
     img: Shadcn,
     skill: "SHADCN",
   },
   {
-    id: 11,
+    id: 12,
     img: MongoDb,
     skill: "MONGODB",
   },
   {
-    id: 12,
-    img: Clerk,
-    skill: "CLERK AUTH",
+    id: 13,
+    img: Sanity,
+    skill: "SANITY",
   },
 ];
