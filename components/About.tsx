@@ -17,7 +17,8 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full h-screen xs:h-auto bg-[#0a192f] text-gray-300">
+      className="w-full h-screen xs:h-auto bg-[#0a192f] text-gray-300"
+    >
       <div className="max-w-[1080px] mx-auto px-5 flex flex-col justify-center h-full">
         <div className="flex items-center">
           <div className="text-[#64ffda] text-4xl mr-5">About me</div>
@@ -53,7 +54,7 @@ const About = () => {
             <p className="text-[#8892b0] text-[20px] mt-4">
               Right now, my main focus is on learning new things. For me,
               learning new stuff is like taking a step towards success. With
-              almost three years in frontend development, I am a very strong
+              more than three years in frontend development, I am a very strong
               Next.js developer with a solid background in creating beautiful
               and functional websites.
             </p>
@@ -64,7 +65,8 @@ const About = () => {
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 1, delay: 0.3 }}
             className="relative my-8 xs:hidden block"
-            ref={ref}>
+            ref={ref}
+          >
             <div className="rounded w-[350px] h-[350px] border-[3px] border-[#64ffda] absolute left-6 top-6 cursor-pointer" />
             <Image
               src={PersonalImage}
