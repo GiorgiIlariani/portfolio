@@ -5,6 +5,8 @@ import RealEstateManager from "@/public/assets/images/real-estate-manager.png";
 import YcDirectory from "@/public/assets/images/yc-directory.png";
 import Architext from "@/public/assets/images/architex.png";
 import UniversityLibrary from "@/public/assets/images/university-library.png";
+import RedberryMomentum from "@/public/assets/images/redberry-momentum.png";
+import TransferAuto from "@/public/assets/images/transfer-auto.png";
 
 export const data = [
   {
@@ -30,6 +32,34 @@ export const data = [
   },
   {
     id: 4,
+    name: "Redberry momentum",
+    image: RedberryMomentum,
+    github: "https://github.com/GiorgiIlariani/redberry-momentum",
+    live: "https://redberry-momentum.vercel.app/",
+  },
+  {
+    id: 6,
+    name: "architex",
+    image: Architext,
+    github: "/",
+    live: "https://architex-hazel.vercel.app/",
+  },
+  {
+    id: 7,
+    name: "Threads App",
+    image: ThreadsApp,
+    github: "https://github.com/GiorgiIlariani/threads",
+    live: "https://threads-kappa-three.vercel.app/",
+  },
+  {
+    id: 8,
+    name: "Evently",
+    image: Evently,
+    github: "https://github.com/GiorgiIlariani/evently",
+    live: "https://evently-eight-pi.vercel.app/",
+  },
+  {
+    id: 5,
     name: "300 Aragveli's page",
     image: Aragveli,
     github: "https://github.com/GiorgiIlariani/300_aragvelii",
@@ -37,23 +67,9 @@ export const data = [
   },
   {
     id: 5,
-    name: "architex",
-    image: Architext,
-    github: "/",
-    live: "https://architex-hazel.vercel.app/",
-  },
-  {
-    id: 6,
-    name: "Threads App",
-    image: ThreadsApp,
-    github: "https://github.com/GiorgiIlariani/threads",
-    live: "https://threads-kappa-three.vercel.app/",
-  },
-  {
-    id: 7,
-    name: "Evently",
-    image: Evently,
-    github: "https://github.com/GiorgiIlariani/evently",
-    live: "https://evently-eight-pi.vercel.app/",
+    name: "Transfer Auto",
+    image: TransferAuto,
+    github: "https://github.com/GiorgiIlariani/transfer-auto",
+    live: "https://transfer-auto.vercel.app/",
   },
 ];

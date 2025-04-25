@@ -11,6 +11,7 @@ import Shadcn from "@/public/assets/images/shadcn.png";
 import MongoDb from "@/public/assets/images/mongodb.png";
 import Clerk from "@/public/assets/images/clerk.jpg";
 import Sanity from "@/public/assets/images/sanity-logo.png";
+import Firebase from "@/public/assets/images/firebase.png";
 
 export const data = [
   {
@@ -77,5 +78,10 @@ export const data = [
     id: 13,
     img: Sanity,
     skill: "SANITY",
+  },
+  {
+    id: 14,
+    img: Firebase,
+    skill: "FIREBASE",
   },
 ];

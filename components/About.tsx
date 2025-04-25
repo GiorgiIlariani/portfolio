@@ -28,35 +28,31 @@ const About = () => {
         <div className="flex xl:flex-col justify-between items-center flex-row">
           <div className="max-w-[550px] mt-4">
             <p className="text-[#8892b0] text-[20px] mt-4">
-              Hello! I'm Giorgi, and I love making things as a Web Developer. I
-              started getting into web development almost three years ago, and
-              it's been a great learning journey. It all began with Bitcamp, a
-              group for web developers. I started learning the basics of HTML,
-              CSS, and JavaScript. Gradually, I found out how much I enjoyed
-              creating websites and became a frontend developer.
+              Hey, I’m Giorgi — a web developer with almost four years of
+              experience building fast and responsive web applications. I got
+              started with Bitcamp, where I learned the fundamentals of HTML,
+              CSS, and JavaScript, and quickly found a passion for creating
+              user-friendly websites.
             </p>
             <p className="text-[#8892b0] text-[20px] mt-4">
-              The first few months were tough, but I kept thinking about the
-              success I could achieve in this field. After five months, I
-              started learning React and loved working with it. A year later, I
-              discovered Next.js, a popular React framework with some cool
-              features. I also found out that writing code with TypeScript is a
-              smart move because it keeps things safe. I learned some styling
-              libraries like Tailwind, MUI, and Shadcn, which helped me save
-              time when building applications.
+              After a few months, I began learning React and later moved into
+              working with Next.js, which has become my main framework. I use
+              TypeScript to write safe and scalable code and rely on UI
+              libraries like Tailwind CSS, Material UI, and Shadcn to speed up
+              development and keep designs clean.
             </p>
             <p className="text-[#8892b0] text-[20px] mt-4">
-              One of the highlights of my career has been working as a Next.js
-              developer on a full-stack project, where I built a full stack
-              e-commerce website. This project helped me gain valuable skills
-              and confidence in creating robust and dynamic web applications.
+              I’ve worked on real client projects, often collaborating with
+              backend developers to build full-stack applications. One of my
+              biggest projects was a complete e-commerce website built with
+              Next.js, which helped sharpen my frontend and backend skills.
             </p>
             <p className="text-[#8892b0] text-[20px] mt-4">
-              Right now, my main focus is on learning new things. For me,
-              learning new stuff is like taking a step towards success. With
-              more than three years in frontend development, I am a very strong
-              Next.js developer with a solid background in creating beautiful
-              and functional websites.
+              I also completed technical assignments for Redberry Agency,
+              reaching the interview stage, and recently delivered three paid
+              projects in just a few months. I'm always pushing myself to learn
+              new tools and build better digital experiences. My goal is to keep
+              growing and contribute to projects that make an impact.
             </p>
           </div>
           <motion.div
