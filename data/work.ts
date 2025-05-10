@@ -7,31 +7,40 @@ import Architext from "@/public/assets/images/architex.png";
 import UniversityLibrary from "@/public/assets/images/university-library.png";
 import RedberryMomentum from "@/public/assets/images/redberry-momentum.png";
 import TransferAuto from "@/public/assets/images/transfer-auto.png";
+import SnapCast from "@/public/assets/images/snapcast.png";
 
 export const data = [
   {
     id: 1,
-    name: "University library",
-    image: UniversityLibrary,
-    github: "https://github.com/GiorgiIlariani/university-library",
-    live: "https://university-library-orcin.vercel.app/",
-  },
-  {
-    id: 2,
     name: "Yc-directory",
     image: YcDirectory,
     github: "https://github.com/GiorgiIlariani/yc-directory",
     live: "https://yc-directory-sage.vercel.app/",
   },
   {
+    id: 2,
+    name: "SnapCast",
+    image: SnapCast,
+    github: "https://github.com/GiorgiIlariani/snapcast",
+    live: "https://snapcast-lemon.vercel.app/",
+  },
+  {
     id: 3,
+    name: "University library",
+    image: UniversityLibrary,
+    github: "https://github.com/GiorgiIlariani/university-library",
+    live: "https://university-library-orcin.vercel.app/",
+  },
+  {
+    id: 4,
     name: "Real Estate Manager",
     image: RealEstateManager,
     github: "https://github.com/GiorgiIlariani/real-estate-manager",
     live: "https://real-estate-manager-one.vercel.app/",
   },
+
   {
-    id: 4,
+    id: 5,
     name: "Redberry momentum",
     image: RedberryMomentum,
     github: "https://github.com/GiorgiIlariani/redberry-momentum",
@@ -39,31 +48,17 @@ export const data = [
   },
   {
     id: 6,
-    name: "architex",
-    image: Architext,
-    github: "/",
-    live: "https://architex-hazel.vercel.app/",
-  },
-  {
-    id: 7,
     name: "Threads App",
     image: ThreadsApp,
     github: "https://github.com/GiorgiIlariani/threads",
     live: "https://threads-kappa-three.vercel.app/",
   },
   {
-    id: 8,
+    id: 7,
     name: "Evently",
     image: Evently,
     github: "https://github.com/GiorgiIlariani/evently",
     live: "https://evently-eight-pi.vercel.app/",
-  },
-  {
-    id: 5,
-    name: "300 Aragveli's page",
-    image: Aragveli,
-    github: "https://github.com/GiorgiIlariani/300_aragvelii",
-    live: "https://300-aragvelii.vercel.app/",
   },
   {
     id: 5,
