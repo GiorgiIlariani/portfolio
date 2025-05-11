@@ -61,7 +61,14 @@ export const data = [
     live: "https://evently-eight-pi.vercel.app/",
   },
   {
-    id: 5,
+    id: 7,
+    name: "Architex",
+    image: Architext,
+    github: "https://github.com/GiorgiIlariani/architex",
+    live: "https://architex-hazel.vercel.app/",
+  },
+  {
+    id: 8,
     name: "Transfer Auto",
     image: TransferAuto,
     github: "https://github.com/GiorgiIlariani/transfer-auto",
